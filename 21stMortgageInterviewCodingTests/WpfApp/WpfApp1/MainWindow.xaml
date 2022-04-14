@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="resultbox">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="205*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="258*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="202*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="User Input&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="1,58,0,0" VerticalAlignment="Top" Width="124" Height="30" Grid.Column="2" FontWeight="Bold" FontSize="16" FontStyle="Normal"/>
+        <TextBlock HorizontalAlignment="Left" Height="0" Margin="6,88,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.5,0.5" Grid.Column="7">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="147.078"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="txtbox" TextWrapping="Wrap" Margin="0,49,68,292" TextChanged="TextBox_TextChanged" Grid.Column="5" Grid.ColumnSpan="4" AutomationProperties.Name="txtbox" Background="{x:Null}" AutomationProperties.IsColumnHeader="True" Foreground="Black" BorderBrush="Black"/>
+        <Button x:Name="btnlargest" Content="Largest Value" HorizontalAlignment="Left" Height="27" Margin="1,234,0,0" VerticalAlignment="Top" Width="154" Grid.Column="2" Click="btnlargest_Click" FontWeight="Bold"/>
+        <Button x:Name="btnsumodd" Content="Sum of Odd Numbers" HorizontalAlignment="Center" Height="27" Margin="0,234,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click" Grid.Column="4" FontWeight="Bold"/>
+        <Button x:Name="btnsumeven" Content="Sum of Even Numbers" HorizontalAlignment="Left" Height="27" Margin="27,234,0,0" VerticalAlignment="Top" Width="132" Grid.Column="6" Grid.ColumnSpan="3" Click="btnsumeven_Click" FontWeight="Bold"/>
+        <TextBox x:Name="resultbox1" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25" Margin="26,348,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="Result" Grid.Column="2" Content="Results&#xD;&#xA;Resultsl" HorizontalAlignment="Left" Height="25" Margin="27,348,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="14"/>
+
+    </Grid>
+</Window>
